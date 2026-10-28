@@ -1,0 +1,15 @@
+{
+  "name": "mern-crud-lab-task-1",
+  "version": "1.0.0",
+  "description": "Simple CRUD application using HTML, CSS, JavaScript, Express and a REST API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["express", "crud", "rest-api", "lab-task"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

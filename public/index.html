@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Item CRUD</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="page-header">
+      <p class="eyebrow">EXPRESS · REST API</p>
+      <h1>Item Management</h1>
+      <p class="subtitle">Add, view, edit and delete items.</p>
+    </header>
+
+    <section class="form-card" aria-labelledby="form-title">
+      <h2 id="form-title">Add an item</h2>
+      <form id="item-form">
+        <div class="form-grid">
+          <label>
+            Name
+            <input id="name" name="name" type="text" placeholder="e.g. Notebook" maxlength="80" required />
+          </label>
+          <label>
+            Price (₹)
+            <input id="price" name="price" type="number" min="0" step="0.01" placeholder="e.g. 100" required />
+          </label>
+        </div>
+        <div class="form-actions">
+          <button id="submit-button" class="button primary" type="submit">Submit</button>
+          <button id="cancel-button" class="button secondary hidden" type="button">Cancel edit</button>
+        </div>
+      </form>
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="table-card" aria-labelledby="items-title">
+      <div class="table-heading">
+        <div>
+          <h2 id="items-title">Items</h2>
+          <p class="subtitle">All items currently in the array</p>
+        </div>
+        <span id="item-count" class="count">0 items</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody id="items-body">
+            <tr><td class="empty-state" colspan="4">Loading items...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer>Lab Task 1 · HTML, CSS, JavaScript and Express REST API</footer>
+  </main>
+</body>
+</html>
