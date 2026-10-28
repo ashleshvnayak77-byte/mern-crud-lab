@@ -12,7 +12,8 @@ Features
 - Update: Edit an existing item.
 - Delete: Remove an item.
 The table displays each item's ID, name, and price, along with Edit and Delete actions.
-How to Run Locally
+
+# How to Run Locally
 1. Install Node.js (LTS): https://nodejs.org/
 2. Open a terminal in this project folder.
 3. Install the dependencies:
